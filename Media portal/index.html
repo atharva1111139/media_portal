@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Portal</title>
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1% 4%;
+        background-color: rgb(255, 196, 0);
+    }
+
+    .navigation-bar h1 {
+        color: rgb(96, 10, 125);
+    }
+
+    .navigation-bar button {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 9px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    /* navigation bar ends   */
+    /* aise bar starts   */
+    .aside-bar {
+        display: flex;
+        height: 80vh;
+    }
+
+    .aside-bar .left {
+        padding-top: 2%;
+        height: 100%;
+        background-color: rgb(255, 196, 0);
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+
+    }
+
+    .aside-bar .left button {
+        width: 150px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 9px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    /* aside bar left ends here  */
+
+    .aside-bar .right {
+        border: 1px solid black;
+        margin: 2px;
+        width: 80%;
+        height: 105%;
+        /* background-color: red; */
+    }
+
+    /* notice line  */
+    .notice {
+        height: 10%;
+        color: white;
+        background-color: black;
+        width: 100%;
+    }
+
+    .notice .sub-notice {
+        height: 100%;
+        text-align: center;
+
+        /* padding: 1% 0.7%; */
+        display: flex;
+    }
+
+    .notice .sub-notice h1 {
+        padding-top: 1%;
+        width: 10%;
+        background-color: red;
+    }
+
+    .notice .sub-notice marquee {
+        padding-top: 1%;
+        width: 90%;
+    }
+
+    /* sub left and sub right section  */
+    .right {
+        height: 90%;
+        width: 80%;
+    }
+
+    .right .sub-left {
+        background-color: white;
+        width: 70%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 50%;
+        width: 33%;
+        border: 1px solid black;
+        gap: 30px;
+    }
+
+    .container img {
+        width: 40%;
+        height: 30%;
+        object-fit: contain;
+    }
+
+    .container a {
+        font-size: small;
+        font-weight: lighter;
+    }
+
+    /* sub right section starts here  */
+    .right .sub-right {
+        height: 90%;
+        width: 30%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .right .sub-right .join-form {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .right .sub-right .join-form .headline {
+        color: yellow;
+    }
+
+    .input-form-tag {
+        padding: 4%;
+        width: 100%;
+    }
+
+    .right .sub-right button {
+        margin-left: 40%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+
+    /* contact us starts here  */
+
+    .contact-title h1 {
+        text-align: center;
+    }
+
+    .contact-sub {
+        padding-top: 3%;
+        display: flex;
+    }
+
+    .contact-left {
+        width: 50%;
+    }
+
+    .mapouter {
+        border-radius: 20px;
+    }
+
+    .contact-right {
+        padding: 40px;
+        width: 50%;
+        /* height: 300px; */
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4%;
+
+    }
+
+    .contact-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 3px;
+        justify-content: center;
+    }
+
+
+    /* footer starts here  */
+
+    footer {
+        background-color: black;
+        padding: 2%;
+        color: white;
+        margin: 2%;
+    }
+    .text {
+        height
+    }
+</style>
+
+<body>
+    <nav class="navigation-bar">
+        <h1>Cloud Media</h1>
+        <div>
+            <a target="_blank" href="https://www.lokmat.com/"><button>LOKMAT</button></a>
+            <a target="_blank" href="https://www.saamana.com/"><button>SAMNA</button></a>
+            <a target="_blank" href="https://www.esakal.com/"><button>SAKAL</button></a>
+            <a target="_blank" href="https://www.loksatta.com/"><button>LOKSATTA</button></a>
+            <a target="_blank" href="https://marathi.indiatimes.com/"><button>MH TIMES</button></a>
+            <a target="_blank" href="https://www.zunjarneta.com/"><button>ZUNJAR NETA</button></a>
+        </div>
+    </nav>
+    <section class="aside-bar">
+        <div class="left">
+            <a target="_blank" href="https://www.lokmat.com/"><button>LOKMAT</button></a>
+            <a target="_blank" href="https://www.saamana.com/"><button>SAMNA</button></a>
+            <a target="_blank" href="https://www.esakal.com/"><button>SAKAL</button></a>
+            <a target="_blank" href="https://www.loksatta.com/"><button>LOKSATTA</button></a>
+            <a target="_blank" href="https://marathi.indiatimes.com/"><button>MH TIMES</button></a>
+            <a target="_blank" href="https://www.zunjarneta.com/"><button>ZUNJAR NETA</button></a>
+        </div>
+        <div class="right">
+            <div class="notice">
+                <div class="sub-notice">
+                    <h1>Notice: </h1>
+                    <marquee behavior="" direction="left">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eveniet.</h3>
+                    </marquee>
+                </div>
+            </div>
+            <div class="sub-left">
+                <div class="container">
+                    <img src="./assets/sakal.png" alt="">
+                    <a href="https://www.esakal.com">VISIT NOW</a>
+                </div>
+                <div class="container">
+                    <img src="./assets/lokmat.png" alt="">
+                    <a href="https://www.lokmat.com">VISIT NOW</a>
+                </div>
+                <div class="container">
+                    <img src="./assets/loksatta.avif" alt="">
+                    <a href="https://www.loksatta.com/">VISIT NOW</a>
+                </div>
+                <div class="container">
+                    <img src="./assets/samna.png" alt="">
+                    <a href="https://www.saamana.com/">VISIT NOW</a>
+                </div>
+                <div class="container">
+                    <img src="./assets/maharashtraTimes.png" alt="">
+                    <a href="https://marathi.indiatimes.com/">VISIT NOW</a>
+                </div>
+                <div class="container">
+                    <img src="./assets/zunjarNeta.png" alt="">
+                    <a href="https://www.zunjarneta.com/">VISIT NOW</a>
+                </div>
+
+            </div>
+            <div class="sub-right">
+                <form class="join-form">
+                    <h1 class="headline">Join Now</h1>
+                    <div>
+                        <h4>Name: </h4>
+                        <input class="input-form-tag" type="text" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <h4>Mail: </h4>
+                        <input class="input-form-tag" type="email" placeholder="Enter your mail id">
+                    </div>
+                    <div>
+                        <h4>Mobile no. </h4>
+                        <input class="input-form-tag" type="number" placeholder="Enter your mobile no.">
+                    </div>
+                    <button>Submit</button>
+
+                </form>
+            </div>
+            <div class="contact-us">
+                <div class="contact-title">
+                    <hr style="margin-top: 1%;">
+                    <h1>CONTACT US</h1>
+                    <hr>
+                </div>
+                <div class="contact-sub">
+
+                    <div class="contact-left">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.206148955413!2d73.85284587501319!3d18.51958408257373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1e2226b7b11%3A0xa4bb8106175ca68b!2sShaniwar%20Wada!5e0!3m2!1sen!2sin!4v1737385154440!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a
+                                    href="https://sprunkiphasez.com/">Sprunki Phase</a></div>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    width: 100%;
+                                    height: 300px;
+                                }
+
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    width: 100%;
+                                    height: 300px;
+                                }
+
+                                .gmap_iframe {
+                                    height: 300px !important;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-data">
+                            <h3 style="color: red;">EMAIL: </h3>
+                            <p>abc@gmail.com</p>
+                        </div>
+
+                        <hr style="width: 100%;">
+                        <div class="contact-data">
+                            <h3 style="color: red;">MOBILE No: </h3>
+                            <p>6563xxxxxx</p>
+                        </div>
+
+                        <hr style="width: 100%;">
+                        <div class="contact-data">
+                            <h3 style="color: red;">ADDRESS: </h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <hr style="width: 100%;">
+                    </div>
+                </div>
+                <footer>
+                    <h4>Copyright 2024-2025 Cloud Media Portal, L.L.C.All rights reserved. Various Trademarks held by
+                        their prospective owners.</h4>
+                </footer>
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+
+</html>
