@@ -1,0 +1,1 @@
+This is a simple html project showing different news paper websites and redirects you to their official website after clicking on their names.Also,there is use of internal css for styling of the web page
